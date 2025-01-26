@@ -1912,7 +1912,7 @@
 	)
 	(text "min 16v cap rating"
 		(exclude_from_sim no)
-		(at 107.188 82.804 0)
+		(at 106.934 84.074 0)
 		(effects
 			(font
 				(size 1.27 1.27)

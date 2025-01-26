@@ -5512,6 +5512,16 @@
 		)
 		(uuid "8ebe34d3-44bc-43fc-9356-0a7499e81abf")
 	)
+	(text "Operating in \"Mode 1\""
+		(exclude_from_sim no)
+		(at 30.226 145.034 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ac26e86b-d6e5-40e8-b4e4-8ea4e70453e9")
+	)
 	(text "VddA only for VDD3P3 pins"
 		(exclude_from_sim no)
 		(at 177.038 33.274 0)

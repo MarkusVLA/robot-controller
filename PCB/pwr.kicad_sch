@@ -125,6 +125,361 @@
 				)
 			)
 		)
+		(symbol "Connector:USB_B_Micro"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -5.08 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "USB_B_Micro"
+				(at -5.08 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 3.81 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 3.81 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "USB Micro Type B connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector USB micro"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "USB*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "USB_B_Micro_0_1"
+				(rectangle
+					(start -5.08 -7.62)
+					(end 5.08 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -3.81 2.159)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -0.635 3.429)
+					(radius 0.381)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -0.127 -7.62)
+					(end 0.127 -6.858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.159) (xy 0.635 2.159)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 2.159) (xy -2.54 2.159) (xy -1.27 3.429) (xy -0.635 3.429)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.159) (xy -1.905 2.159) (xy -1.27 0.889) (xy 0 0.889)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 2.794) (xy 0.635 1.524) (xy 1.905 2.159) (xy 0.635 2.794)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.318 5.588) (xy -1.778 5.588) (xy -2.032 4.826) (xy -4.064 4.826) (xy -4.318 5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.699 5.842) (xy -4.699 5.588) (xy -4.445 4.826) (xy -4.445 4.572) (xy -1.651 4.572) (xy -1.651 4.826)
+						(xy -1.397 5.588) (xy -1.397 5.842) (xy -4.699 5.842)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.254 1.27)
+					(end -0.508 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 5.08 -5.207)
+					(end 4.318 -4.953)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 -2.667)
+					(end 4.318 -2.413)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 -0.127)
+					(end 4.318 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 4.953)
+					(end 4.318 5.207)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "USB_B_Micro_1_1"
+				(pin power_out line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "ID"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "Shield"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016) hide)
@@ -2485,363 +2840,6 @@
 				)
 			)
 		)
-		(symbol "UJ2-MIBH2-4-SMT-TR:UJ2-MIBH2-4-SMT-TR"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at -5.0874 10.1747 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "UJ2-MIBH2-4-SMT-TR"
-				(at -5.0816 -12.704 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "UJ2-MIBH2-4-SMT-TR:CUI_UJ2-MIBH2-4-SMT-TR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Same Sky"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "\n                        \n                            Micro B, USB 2.0, 480 Mbps, 30 Vac, 1.8 A, Right Angle, Surface Mount, USB Receptacle\n                        \n"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/UJ2-MIBH2-4-SMT-TR/Same+Sky/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "Manufacturer recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "1.0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/UJ2-MIBH2-4-SMT-TR/Same+Sky/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "UJ2-MIBH2-4-SMT-TR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "CUI Inc"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "UJ2-MIBH2-4-SMT-TR_0_0"
-				(rectangle
-					(start -5.08 -10.16)
-					(end 5.08 10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -10.16 7.62 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 5.08 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 2.54 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 0 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -2.54 0)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -7.62 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "SH1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -7.62 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "SH2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -7.62 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "SH3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -7.62 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "SH4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -7.62 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "SH5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_names
@@ -3468,12 +3466,6 @@
 		(uuid "509e4fc1-589a-4d7c-9ca8-b94bd4367a27")
 	)
 	(junction
-		(at 91.44 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "540b373c-f559-47ed-8cd5-04a3a3ffe1b7")
-	)
-	(junction
 		(at 138.43 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3534,6 +3526,12 @@
 		(uuid "b17e0ba9-51da-4656-ab3e-5f6691c26ca9")
 	)
 	(junction
+		(at 73.66 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5515062-16ce-4933-8dec-845c75a40f6b")
+	)
+	(junction
 		(at 123.19 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3552,8 +3550,8 @@
 		(uuid "f9191b6e-be4f-4b0e-ae33-bcc3fdeb0f51")
 	)
 	(no_connect
-		(at 82.55 139.7)
-		(uuid "5329ea67-2086-4d01-9b79-155b875269b8")
+		(at 82.55 157.48)
+		(uuid "a9f0acdd-b452-4470-8f68-66069839f02f")
 	)
 	(wire
 		(pts
@@ -3757,16 +3755,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 132.08) (xy 91.44 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3317ae4e-2bd4-404f-bf09-178d83c3e214")
-	)
-	(wire
-		(pts
 			(xy 82.55 147.32) (xy 105.41 147.32)
 		)
 		(stroke
@@ -3907,26 +3895,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 137.16) (xy 91.44 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62cc22dc-4233-43af-b6cf-e979f4fba7f4")
-	)
-	(wire
-		(pts
-			(xy 83.82 144.78) (xy 82.55 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64459737-27f2-4b2f-8178-1b480fd4c572")
-	)
-	(wire
-		(pts
 			(xy 143.51 72.39) (xy 143.51 95.25)
 		)
 		(stroke
@@ -3964,6 +3932,16 @@
 			(type default)
 		)
 		(uuid "6edfb871-554d-431c-81e5-c81142f9e8e7")
+	)
+	(wire
+		(pts
+			(xy 74.93 162.56) (xy 74.93 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "704fc6e2-3872-4c54-9fb6-6425f7c041d3")
 	)
 	(wire
 		(pts
@@ -4017,6 +3995,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 165.1) (xy 72.39 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80445477-7007-4626-8dae-07c2bc733343")
+	)
+	(wire
+		(pts
 			(xy 105.41 147.32) (xy 105.41 153.67)
 		)
 		(stroke
@@ -4044,6 +4032,16 @@
 			(type default)
 		)
 		(uuid "84c9a099-2ca9-4bf9-bd38-520980fa53da")
+	)
+	(wire
+		(pts
+			(xy 74.93 165.1) (xy 73.66 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86c17fce-a34c-4fed-b79d-918973d59c83")
 	)
 	(wire
 		(pts
@@ -4107,6 +4105,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 165.1) (xy 73.66 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98a2e5d2-6d99-48f2-bf38-8149ccb14352")
+	)
+	(wire
+		(pts
 			(xy 132.08 86.36) (xy 123.19 86.36)
 		)
 		(stroke
@@ -4134,6 +4142,16 @@
 			(type default)
 		)
 		(uuid "adaf132b-96b2-42a2-8f88-4aa0bb4115e8")
+	)
+	(wire
+		(pts
+			(xy 73.66 165.1) (xy 72.39 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae5599c7-848f-4750-8780-ac7a637a856e")
 	)
 	(wire
 		(pts
@@ -4337,16 +4355,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 139.7) (xy 91.44 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db14bade-e20e-42ea-8c7b-e8525134903e")
-	)
-	(wire
-		(pts
 			(xy 73.66 97.79) (xy 81.28 97.79)
 		)
 		(stroke
@@ -4354,26 +4362,6 @@
 			(type default)
 		)
 		(uuid "db2a25d4-ff85-473e-b2d6-e721cd755b07")
-	)
-	(wire
-		(pts
-			(xy 82.55 132.08) (xy 91.44 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dce03918-cb2e-4b70-82c7-bb1313cfd802")
-	)
-	(wire
-		(pts
-			(xy 83.82 142.24) (xy 82.55 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd21732a-88d9-41a6-8e1b-ae851a6f5220")
 	)
 	(wire
 		(pts
@@ -4525,7 +4513,7 @@
 	)
 	(text "USB-diff:\nW = 0.18mm \nS = 0.2 mm\n-> 90 Ohm impedance"
 		(exclude_from_sim no)
-		(at 72.39 159.004 0)
+		(at 86.36 171.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4591,8 +4579,8 @@
 		)
 		(uuid "2fdcbf1c-bf72-41d1-872b-6014e2b5f091")
 	)
-	(label "D+"
-		(at 83.82 142.24 0)
+	(label "D-"
+		(at 82.55 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4600,7 +4588,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4a5eea6a-babc-47ce-95fb-cea414d04095")
+		(uuid "3cc581a3-b781-4e5a-b8cb-bf8fd1e4f3ac")
 	)
 	(label "D-"
 		(at 100.33 158.75 180)
@@ -4613,8 +4601,8 @@
 		)
 		(uuid "6d24fbff-38e8-48cc-82f3-fbb95087523c")
 	)
-	(label "D-"
-		(at 83.82 144.78 0)
+	(label "D+"
+		(at 82.55 152.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4622,7 +4610,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8724b5b6-8be8-4cca-81c4-5474503d5055")
+		(uuid "a1d10122-c1c8-4bc5-a7c3-e7ff6c7b8ced")
 	)
 	(label "LOAD"
 		(at 132.08 62.23 0)
@@ -4682,6 +4670,73 @@
 			(justify left)
 		)
 		(uuid "e4717fa6-6be2-4496-8c63-b9898acee33b")
+	)
+	(symbol
+		(lib_name "GND_3")
+		(lib_id "power:GND")
+		(at 73.66 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a80cc62-4c12-4b59-9c87-236c25ac0cea")
+		(property "Reference" "#PWR036"
+			(at 73.66 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 73.66 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec620964-9d00-44e8-985e-14bcbacbcf4f")
+		)
+		(instances
+			(project "Battle_bot_pcb"
+				(path "/d6203762-4d2e-4b90-86d1-ca295813f2e5/0ae5f9ae-65c9-435a-a7c4-ebbd11393512"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -6217,208 +6272,6 @@
 		)
 	)
 	(symbol
-		(lib_id "UJ2-MIBH2-4-SMT-TR:UJ2-MIBH2-4-SMT-TR")
-		(at 72.39 139.7 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a64b8167-d366-4e93-b957-c4b1554cdad0")
-		(property "Reference" "J1"
-			(at 72.39 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "UJ2-MIBH2-4-SMT-TR"
-			(at 72.39 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UJ2-MIBH2-4-SMT-TR:CUI_UJ2-MIBH2-4-SMT-TR"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Same Sky"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\n                        \n                            Micro B, USB 2.0, 480 Mbps, 30 Vac, 1.8 A, Right Angle, Surface Mount, USB Receptacle\n                        \n"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/UJ2-MIBH2-4-SMT-TR/Same+Sky/view-part/?ref=eda"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer recommendations"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "1.0"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/UJ2-MIBH2-4-SMT-TR/Same+Sky/view-part/?ref=snap"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "UJ2-MIBH2-4-SMT-TR"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "CUI Inc"
-			(at 72.39 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "6fc6cfe1-26d0-47d3-9a29-64f000bcb2d9")
-		)
-		(pin "SH4"
-			(uuid "014452bc-7f12-44d8-9652-fdd3861c2cd2")
-		)
-		(pin "SH2"
-			(uuid "785403dc-15d2-43b6-b55a-92b19946d0d7")
-		)
-		(pin "SH5"
-			(uuid "7967f4f3-d2f2-4661-9078-73d65636706e")
-		)
-		(pin "SH3"
-			(uuid "480d4fbf-a54e-4aa7-bd13-6c7c89fdd03a")
-		)
-		(pin "3"
-			(uuid "0c667071-2853-41ec-aac6-bc55c84e09e5")
-		)
-		(pin "SH1"
-			(uuid "bcc4964b-8bc3-4954-b686-a2c0ff9775e6")
-		)
-		(pin "2"
-			(uuid "45aefd04-200d-45a7-83ab-44f705a4f844")
-		)
-		(pin "1"
-			(uuid "bf0e7b7c-d3f4-4f38-8514-3259d1865e2c")
-		)
-		(pin "5"
-			(uuid "a772d67c-28c1-4888-b4e1-c1325794cc63")
-		)
-		(instances
-			(project "Battle_bot_pcb"
-				(path "/d6203762-4d2e-4b90-86d1-ca295813f2e5/0ae5f9ae-65c9-435a-a7c4-ebbd11393512"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:BAT60A")
 		(at 124.46 55.88 90)
 		(unit 1)
@@ -6566,6 +6419,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:USB_B_Micro")
+		(at 74.93 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bec54a11-fe07-410f-a642-48c0bb05d946")
+		(property "Reference" "J1"
+			(at 74.93 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_B_Micro"
+			(at 74.93 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_USB:USB_Micro-B_Molex-105017-0001"
+			(at 78.74 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB Micro Type B connector"
+			(at 74.93 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "2040d0f2-5502-4092-87c5-bc6a0d7d5bfd")
+		)
+		(pin "5"
+			(uuid "bd1eadae-5438-4d41-9ade-cb4fdc2a48c8")
+		)
+		(pin "2"
+			(uuid "1040f365-2d4f-43e5-8ed3-e655e6d63151")
+		)
+		(pin "4"
+			(uuid "5694caab-654a-4bdb-a0af-9d7b2fd89d1e")
+		)
+		(pin "3"
+			(uuid "0556f2c3-b39c-4757-a6be-003b270a4d24")
+		)
+		(pin "1"
+			(uuid "7fa08ff5-a1ef-407b-a9b1-7670d51a124c")
+		)
+		(instances
+			(project "Battle_bot_pcb"
+				(path "/d6203762-4d2e-4b90-86d1-ca295813f2e5/0ae5f9ae-65c9-435a-a7c4-ebbd11393512"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 105.41 144.78 0)
 		(unit 1)
@@ -6626,73 +6559,6 @@
 			(project "Battle_bot_pcb"
 				(path "/d6203762-4d2e-4b90-86d1-ca295813f2e5/0ae5f9ae-65c9-435a-a7c4-ebbd11393512"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_3")
-		(lib_id "power:GND")
-		(at 91.44 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c3b197dc-c453-47b6-8ecc-7a2932321881")
-		(property "Reference" "#PWR022"
-			(at 91.44 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 91.44 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 91.44 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "833d7145-6973-42a2-9de3-d994ae44e858")
-		)
-		(instances
-			(project "Battle_bot_pcb"
-				(path "/d6203762-4d2e-4b90-86d1-ca295813f2e5/0ae5f9ae-65c9-435a-a7c4-ebbd11393512"
-					(reference "#PWR022")
 					(unit 1)
 				)
 			)
