@@ -620,6 +620,18 @@
     [
       "d6203762-4d2e-4b90-86d1-ca295813f2e5",
       "Root"
+    ],
+    [
+      "0ae5f9ae-65c9-435a-a7c4-ebbd11393512",
+      "PWR"
+    ],
+    [
+      "57ba2272-ae20-40d5-a8fd-5ed98c5fe32f",
+      "MCU"
+    ],
+    [
+      "d046f2ed-f018-4fa6-8076-db4e8d33c8de",
+      "IO"
     ]
   ],
   "text_variables": {}
