@@ -18,3 +18,8 @@ Diagnostics:
   Suppress:
     - "pp_file_not_found" # Suppresses preprocessor "file not found" diagnostics
 
+# FallbackFlags: # In case compile_commands.json doesn't handle some cases
+#   - -Wno-error=implicit-function-declaration
+#   - -Wno-error
+
+

@@ -5,11 +5,6 @@
 #include <esp_log.h>
 #include <math.h>
 
-// Private config should include the defenitions:
-// WIFI_SSID
-// WIFI_PASSWORD
-// SERVER_IP
-// SERVER_PORT
 #include "spi_master.h"
 
 #define LED_PIN GPIO_NUM_14

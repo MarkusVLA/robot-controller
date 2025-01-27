@@ -8,8 +8,8 @@ The controller can control 2 DC-motors for vehicle movement and an ESC for the m
 ## Schematic and Layout
 
 <div style="display: flex; gap: 20px;">
-    <img src="PCB/img/layout.jpg" alt="3D render of the top side" width="400"/>
-    <!--<img src="PCB/img/render_blue.png" alt="3D render of the bottom side" width="400"/>-->
+    <img src="PCB/img/layout.jpg" alt="3D render of the top side" width="300"/>
+    <img src="PCB/img/render.png" alt="3D render perspective view" width="500"/>
 </div>
 
 ## Firmware
