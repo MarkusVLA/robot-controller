@@ -1,0 +1,20 @@
+CompileFlags:
+  Add: 
+    - -I/opt/llvm-esp/esp-clang/include
+    - -I${IDF_PATH}/components/*/include
+    - -I${HOME}/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include
+    - -I${HOME}/esp/esp-idf/components/freertos/esp_additions/include/freertos
+
+  Remove: 
+    - -fno-tree-switch-conversion
+    - -mlong-calls
+    - -fno-shrink-wrap
+    - -mtext-section-literals
+    - -mlongcalls
+    - -fstrict-volatile-bitfields
+    - -isysroot=/Users/tol/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf
+
+Diagnostics:
+  Suppress:
+    - "pp_file_not_found" # Suppresses preprocessor "file not found" diagnostics
+
