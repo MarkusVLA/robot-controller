@@ -5468,7 +5468,7 @@
 	)
 	(text "MCU and peripherals"
 		(exclude_from_sim no)
-		(at 204.216 174.498 0)
+		(at 204.47 175.006 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -5587,7 +5587,6 @@
 	)
 	(label "IO40"
 		(at 132.715 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5598,7 +5597,6 @@
 	)
 	(label "IN[1..4]"
 		(at 137.16 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5609,7 +5607,6 @@
 	)
 	(label "SDO"
 		(at 213.36 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5620,7 +5617,6 @@
 	)
 	(label "IN1"
 		(at 125.73 147.32 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5631,7 +5627,6 @@
 	)
 	(label "RX"
 		(at 217.17 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5642,7 +5637,6 @@
 	)
 	(label "SDO"
 		(at 30.48 154.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5653,7 +5647,6 @@
 	)
 	(label "SDA"
 		(at 213.36 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5664,7 +5657,6 @@
 	)
 	(label "IN3"
 		(at 125.73 129.54 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5675,7 +5667,6 @@
 	)
 	(label "CS"
 		(at 213.36 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5686,7 +5677,6 @@
 	)
 	(label "IN2"
 		(at 125.73 119.38 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5697,7 +5687,6 @@
 	)
 	(label "IN2"
 		(at 125.73 149.86 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5708,7 +5697,6 @@
 	)
 	(label "SCL"
 		(at 213.36 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5719,7 +5707,6 @@
 	)
 	(label "IO15"
 		(at 132.08 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5730,7 +5717,6 @@
 	)
 	(label "IO41"
 		(at 132.715 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5741,7 +5727,6 @@
 	)
 	(label "INT1"
 		(at 72.39 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5752,7 +5737,6 @@
 	)
 	(label "IN4"
 		(at 125.73 152.4 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5763,7 +5747,6 @@
 	)
 	(label "INT2"
 		(at 213.36 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5774,7 +5757,6 @@
 	)
 	(label "INT1"
 		(at 212.725 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5785,7 +5767,6 @@
 	)
 	(label "CS"
 		(at 25.4 170.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5796,7 +5777,6 @@
 	)
 	(label "IO45"
 		(at 250.825 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5807,7 +5787,6 @@
 	)
 	(label "IN1"
 		(at 125.73 121.92 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5818,7 +5797,6 @@
 	)
 	(label "TX"
 		(at 217.17 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5829,7 +5807,6 @@
 	)
 	(label "INT2"
 		(at 72.39 157.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5840,7 +5817,6 @@
 	)
 	(label "IN4"
 		(at 125.73 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5851,7 +5827,6 @@
 	)
 	(label "SDA"
 		(at 34.29 165.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5862,7 +5837,6 @@
 	)
 	(label "IO42"
 		(at 132.715 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5873,7 +5847,6 @@
 	)
 	(label "SCL"
 		(at 29.21 167.64 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5884,7 +5857,6 @@
 	)
 	(label "IO16"
 		(at 132.08 73.66 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5895,7 +5867,6 @@
 	)
 	(label "IN3"
 		(at 125.73 154.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5907,7 +5878,6 @@
 	(hierarchical_label "M_INPUT_BUS"
 		(shape output)
 		(at 154.94 154.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5919,7 +5889,6 @@
 	(hierarchical_label "B_STAT"
 		(shape input)
 		(at 213.36 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5931,7 +5900,6 @@
 	(hierarchical_label "USB_D+"
 		(shape bidirectional)
 		(at 214.63 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5943,7 +5911,6 @@
 	(hierarchical_label "USB_D-"
 		(shape bidirectional)
 		(at 214.63 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5955,7 +5922,6 @@
 	(hierarchical_label "V_SENSE"
 		(shape input)
 		(at 219.71 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5967,7 +5933,6 @@
 	(hierarchical_label "M_SLEEP"
 		(shape output)
 		(at 121.92 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5979,7 +5944,6 @@
 	(hierarchical_label "M_FAULT"
 		(shape input)
 		(at 218.44 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -8,9 +8,12 @@ The controller can control 2 DC-motors for vehicle movement and an ESC for the m
 ## Schematic and Layout
 
 <div style="display: flex; gap: 20px;">
-    <img src="PCB/img/layout.jpg" alt="3D render of the top side" width="300"/>
-    <img src="PCB/img/render.png" alt="3D render perspective view" width="500"/>
+    <img src="PCB/img/render_top.jpg" alt="3D render of the top side" width="400"/>
+    <img src="PCB/img/render.png" alt="3D render perspective view" width="400"/>
 </div>
+
+[View Schematic (PDF)](PCB/layout/schematic.pdf)
 
 ## Firmware
 
+The esp32 firmware is written in c using the esp-idf.

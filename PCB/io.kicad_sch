@@ -1944,6 +1944,19 @@
 		)
 		(uuid "5da5deb0-6a02-47da-9324-9314aa0f426b")
 	)
+	(text "Motor Driver"
+		(exclude_from_sim no)
+		(at 194.818 174.498 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "a62b1f5f-d0eb-4a2b-847f-f6db9febc301")
+	)
 	(text "DC-Motor Driver"
 		(exclude_from_sim no)
 		(at 105.918 52.324 0)
@@ -1959,7 +1972,6 @@
 	)
 	(label "IN2"
 		(at 142.24 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1970,7 +1982,6 @@
 	)
 	(label "IN4"
 		(at 142.24 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1981,7 +1992,6 @@
 	)
 	(label "IN[1..4]"
 		(at 128.27 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1992,7 +2002,6 @@
 	)
 	(label "AOUT2"
 		(at 177.8 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2003,7 +2012,6 @@
 	)
 	(label "BOUT2"
 		(at 177.8 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2014,7 +2022,6 @@
 	)
 	(label "AOUT1"
 		(at 177.8 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2025,7 +2032,6 @@
 	)
 	(label "IN1"
 		(at 142.24 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2036,7 +2042,6 @@
 	)
 	(label "IN3"
 		(at 142.24 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2047,7 +2052,6 @@
 	)
 	(label "BOUT1"
 		(at 177.8 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2059,7 +2063,6 @@
 	(hierarchical_label "M_FAULT"
 		(shape output)
 		(at 194.31 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2071,7 +2074,6 @@
 	(hierarchical_label "M_SLEEP"
 		(shape input)
 		(at 139.7 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2083,7 +2085,6 @@
 	(hierarchical_label "M_INPUT_BUS"
 		(shape input)
 		(at 121.92 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
