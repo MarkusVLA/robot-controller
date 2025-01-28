@@ -3,7 +3,7 @@
 ## Overview
 ESP32-S3 based robot controller designed for combat robots in the 150g weight class
 
-The controller can control 2 DC-motors for vehicle movement and an ESC for the main weapon. The board also embeds a 3-axis gyroscope and accelerometer which can be used to improve vehicle handling or detect when the robot is flipped. Wireless control is enabled through an integrated 2.4GHz PCB-antenna supporting both WiFi and Bluetooth connectivity. 
+The controller can control 2 DC-motors for vehicle movement and an ESC for the main weapon. The board also embeds a 3-axis gyroscope and accelerometer which can be used to improve vehicle handling or detect when the robot is flipped. Wireless control is enabled through an integrated 2.4GHz PCB-antenna supporting both WiFi and Bluetooth. 
 
 ## Schematic and Layout
 
@@ -15,5 +15,7 @@ The controller can control 2 DC-motors for vehicle movement and an ESC for the m
 [View Schematic (PDF)](documentation/schematic.pdf)
 
 ## Firmware
-
-The esp32 firmware is written in c using the esp-idf.
+The esp32 firmware is being developed in C using the ESP-IDF framework. Development is currently being done on an ESP32-S2 development board while PCB fabrication is in progress. Features in development:
+- Motor control interface
+- IMU communication bus and data processing
+- Wireless communication with PS5 controller
