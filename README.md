@@ -12,7 +12,7 @@ The controller can control 2 DC-motors for vehicle movement and an ESC for the m
     <img src="PCB/img/render.png" alt="3D render perspective view" width="400"/>
 </div>
 
-[View Schematic (PDF)](PCB/img/schematic.pdf)
+[View Schematic (PDF)](documentation/schematic.pdf)
 
 ## Firmware
 
