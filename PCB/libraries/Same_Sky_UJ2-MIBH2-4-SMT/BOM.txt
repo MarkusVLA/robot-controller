@@ -1,3 +1,0 @@
-3DX_Same_Sky_Supplier: Same Sky
-3DX_Same_Sky_Description: Micro B, USB 2.0, 480 Mbps, 30 Vac, 1.8 A, Right Angle, Surface Mount, USB Receptacle
-3DX_Same_Sky_Model Number: UJ2-MIBH2-4-SMT
