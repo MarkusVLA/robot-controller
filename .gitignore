@@ -1,3 +1,4 @@
 *.DS_Store
 *.zip
 *fp-info-cache
+*private_config.h
