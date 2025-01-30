@@ -1,16 +1,23 @@
 #include "rest_api.h"
 #include "sensor_api.h"
+#include <driver/gpio.h>
+
+#include "io_config.h"
 
 // HELPERS
 
 static esp_err_t get_handler(httpd_req_t *req) {
+    // Indicate transmission time with onboard LED
+    gpio_set_level(LED_PIN, 1);
     char response[128];
-
+    
+    float sensor_value = get_sensor_val();
     snprintf(response, sizeof(response), 
              "HTTP Get response: %.1fC\n", 
-             23.5); // Hard-coded value
+             sensor_value); // Hard-coded value
 
     httpd_resp_send(req, response, HTTPD_RESP_USE_STRLEN);
+    gpio_set_level(LED_PIN, 0);
     return ESP_OK;
 }
 

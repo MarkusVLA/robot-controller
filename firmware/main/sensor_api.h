@@ -3,4 +3,4 @@
 
 #pragma once
 
-float get_sensor_val(int t);
+float get_sensor_val();

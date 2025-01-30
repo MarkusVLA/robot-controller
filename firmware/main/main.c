@@ -13,18 +13,11 @@
 // SERVER_IP
 // SERVER_PORT
 #include "private_config.h" 
+#include "io_config.h"
 
-#define LED_PIN GPIO_NUM_14
 #define TAG "main"
 
 void app_main(void) {
-    gpio_config_t io_config = {
-        .pin_bit_mask = (1ULL << LED_PIN), // 64 bit mask
-        .mode = GPIO_MODE_OUTPUT,
-        .pull_down_en = GPIO_PULLDOWN_DISABLE,
-        .pull_up_en = GPIO_PULLUP_DISABLE,
-        .intr_type = GPIO_INTR_DISABLE
-    }; 
 
     gpio_config(&io_config);
 
