@@ -15,7 +15,5 @@ The controller can control 2 DC-motors for vehicle movement and an ESC for the m
 [View Schematic (PDF)](documentation/schematic.pdf)
 
 ## Firmware
-The esp32 firmware is being developed in C using the ESP-IDF framework. Development is currently being done on an ESP32-S2 development board while PCB fabrication is in progress. Features in development:
-- Motor control interface
-- IMU communication bus and data processing
-- Wireless communication with PS5 controller
+The esp32 firmware is being developed in C using the ESP-IDF framework. Development is done on an ESP32 development board.
+
