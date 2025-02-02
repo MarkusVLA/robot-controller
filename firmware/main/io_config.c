@@ -3,11 +3,7 @@
 
 gpio_config_t io_config = {
     .pin_bit_mask = (
-            1ULL << LED_PIN     |
-            1ULL << MOTOR_IN1   |
-            1ULL << MOTOR_IN2   |
-            1ULL << MOTOR_IN2   |
-            1ULL << MOTOR_IN4), // 64 bit mask
+            1ULL << LED_PIN),
                                 
     .mode = GPIO_MODE_OUTPUT,
     .pull_down_en = GPIO_PULLDOWN_DISABLE,

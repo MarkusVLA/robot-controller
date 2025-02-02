@@ -1,10 +1,26 @@
 #include "rest_api.h"
 #include "sensor_api.h"
 #include <driver/gpio.h>
-
+#include "motor_api.h"
 #include "io_config.h"
+#include <esp_log.h>
 
 // HELPERS
+#define TAG "Rest API"
+
+esp_err_t handle_motor_speed(char* data) {
+    // 
+    uintmax_t duty = strtoumax(data, NULL, 10);
+    if (duty > 1023){
+       ESP_LOGE(TAG, "Could not convert post request content to motor speed");
+       return ESP_FAIL;
+    }
+    if (test_motor_a(duty) != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to spin motor");
+        return ESP_FAIL;
+    }
+    return ESP_OK;
+}
 
 static esp_err_t get_handler(httpd_req_t *req) {
     // Indicate transmission time with onboard LED
@@ -33,6 +49,13 @@ static esp_err_t post_handler(httpd_req_t *req){
         } 
         return ESP_FAIL; 
     }
+
+    ret = handle_motor_speed(content);
+    if (ret != ESP_OK) {
+        httpd_resp_send_500(req);
+        return ESP_FAIL;
+    }
+
     const char resp[] = "URI POST Response";
     httpd_resp_send(req, resp, HTTPD_RESP_USE_STRLEN);
     return ESP_OK;

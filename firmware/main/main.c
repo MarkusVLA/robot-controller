@@ -6,6 +6,7 @@
 
 #include "wifi_api.h"
 #include "rest_api.h"
+#include "motor_api.h"
 
 // Private config should include the defenitions:
 // WIFI_SSID
@@ -26,7 +27,8 @@ void app_main(void) {
 
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to connect to WiFi");
-        return;
+        /*return;*/
+        ESP_LOGI(TAG, "Continuing to wihtout WiFi connection");
     }
 
     esp_netif_ip_info_t ip_info;
@@ -36,9 +38,20 @@ void app_main(void) {
     // Init REST API
     httpd_handle_t server_handle = start_webserver();
 
+    ret = init_motor_config();
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to initalize motor config");
+        return;
+    }
+
+    ret = test_motor_a(512);
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to run motor");
+    }
+
     int running = 1;
     while(running) {
-        vTaskDelay(pdMS_TO_TICKS(8000));
+        vTaskDelay(pdMS_TO_TICKS(5000));
     }
 
     stop_webserver(server_handle);
