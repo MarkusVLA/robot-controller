@@ -28,7 +28,7 @@ void app_main(void) {
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to connect to WiFi");
         /*return;*/
-        ESP_LOGI(TAG, "Continuing to wihtout WiFi connection");
+        ESP_LOGI(TAG, "Continuing to main loop wihtout WiFi connection");
     }
 
     esp_netif_ip_info_t ip_info;

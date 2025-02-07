@@ -1,9 +1,9 @@
-// This file contains SPI master driver configuration and API for communicating with 
-// LSM6DS3TR accelerometer and gyroscope SoC.
+// This file contains SPI master driver configuration and API for communicating with LSM6DS3TR accelerometer and gyroscope SoC. 
 
-#pragma once
+#pragma once 
 
 #include <esp_err.h>
+#include <stdint.h>
 #include "driver/gpio.h"
 #include "driver/spi_master.h"
 #include "driver/spi_common.h"
@@ -17,6 +17,15 @@
 #define CS      GPIO_NUM_13
 
 #define SPI_SCL_SPEED 1e6 // 1MHz clock out
+                         
+                          
+// Command for accelerometer           
+typedef struct {
+    uint8_t cmd;
+}LSM6DS3_cmd;
+
+// IO configuration for SPI bus
+extern gpio_config_t spi_io_config;
 
 // Initalize the SPI driver with given config
 esp_err_t init_spi(spi_bus_config_t config);
@@ -26,4 +35,7 @@ esp_err_t spi_transmit_bytes(uint8_t *bytes, uint8_t *rec);
 
 // Deinitialize the SPI driver.
 esp_err_t deinit_spi(void);
+
+
+
 

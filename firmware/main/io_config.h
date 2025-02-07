@@ -4,7 +4,7 @@
 
 #include "driver/gpio.h"
 
-#define LED_PIN GPIO_NUM_38
+#define LED_PIN GPIO_NUM_39
 
 #define MOTOR_IN1 GPIO_NUM_14 
 /*#define MOTOR_IN2 GPIO_NUM_18*/
