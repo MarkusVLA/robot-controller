@@ -6,36 +6,23 @@
 #include <stdint.h>
 #include "driver/gpio.h"
 #include "driver/spi_master.h"
-#include "driver/spi_common.h"
-#include "hal/spi_types.h"
 
 #define INT_1   GPIO_NUM_9
 #define INT_2   GPIO_NUM_14
-#define SDO     GPIO_NUM_10
-#define SDA     GPIO_NUM_11
-#define SCL     GPIO_NUM_12
+
+#define MISO    GPIO_NUM_10
+#define MOSI    GPIO_NUM_11
+#define SCLK    GPIO_NUM_12
 #define CS      GPIO_NUM_13
 
-#define SPI_SCL_SPEED 1e6 // 1MHz clock out
-                         
-                          
-// Command for accelerometer           
-typedef struct {
-    uint8_t cmd;
-}LSM6DS3_cmd;
+#define SPI_SCK_SPEED 10e6 // 10 MHz clock out
+#define SPI_QUEUE_SIZE 8
 
-// IO configuration for SPI bus
-extern gpio_config_t spi_io_config;
-
+#define LSM6DS3_RX_BUF_SIZE (8 * sizeof(uint8_t))
+#define LSM6DS3_HOST SPI2_HOST
+                   
 // Initalize the SPI driver with given config
-esp_err_t init_spi(spi_bus_config_t config);
+spi_device_handle_t init_spi();
 
-// Transmit byte array through spi and save response in rec
-esp_err_t spi_transmit_bytes(uint8_t *bytes, uint8_t *rec);
-
-// Deinitialize the SPI driver.
-esp_err_t deinit_spi(void);
-
-
-
-
+// Test handshake with LSM6DS3
+esp_err_t test_LSM6DS3_connection(spi_device_handle_t spi);

@@ -1,10 +1,4 @@
-/**
- * @file lsm6ds3_reg.h
- * @brief Register definitions for LSM6DS3 IMU sensor
- * 
- * This file contains the register addresses and bit definitions
- * for the LSM6DS3 6-axis IMU sensor.
- */
+// Register definitions for LSM6DS3 IMU sensor
 
 #pragma once
 

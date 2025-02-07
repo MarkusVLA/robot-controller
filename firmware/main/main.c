@@ -15,6 +15,7 @@
 // SERVER_PORT
 #include "private_config.h" 
 #include "io_config.h"
+#include "spi_master.h"
 
 #define TAG "main"
 
@@ -44,14 +45,13 @@ void app_main(void) {
         return;
     }
 
-    ret = test_motor_a(512);
-    if (ret != ESP_OK) {
-        ESP_LOGE(TAG, "Failed to run motor");
-    }
-
+    spi_device_handle_t LSM6DS3_handle = init_spi();
+    ret = test_LSM6DS3_connection(LSM6DS3_handle);
+    
     int running = 1;
     while(running) {
-        vTaskDelay(pdMS_TO_TICKS(5000));
+        vTaskDelay(pdMS_TO_TICKS(10));
+        test_LSM6DS3_connection(LSM6DS3_handle);
     }
 
     stop_webserver(server_handle);
