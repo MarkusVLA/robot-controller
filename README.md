@@ -15,5 +15,6 @@ The controller can control 2 DC-motors for vehicle movement and an ESC for the m
 [View Schematic (PDF)](documentation/schematic.pdf)
 
 ## Firmware
-The esp32 firmware is being developed in C using the ESP-IDF framework. Development is done on an ESP32 development board.
+The esp32 firmware is being developed in C using the ESP-IDF framework.
+Installation and build instructions from: [ESP-IDF API reference] (https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/index.html)
 
