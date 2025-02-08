@@ -3,6 +3,10 @@
 #include <string.h>
 #include "esp_log.h"
 
+#define TAG "LSM6DS3"
+
+// Sensor read based on sensor inturrupts: INT_1, INT_2
+
 static const gpio_config_t LSM6DS3_intr_config = {
     .pin_bit_mask = ((1ULL << INT_1)  |
                      (1ULL << INT_2)),
@@ -43,7 +47,6 @@ spi_device_handle_t init_spi(){
     return spi;
 }
 
-
 static esp_err_t write_LSM6DS3_register(spi_device_handle_t spi, 
                                         uint8_t addr, 
                                         uint8_t val){
@@ -67,6 +70,7 @@ static esp_err_t write_LSM6DS3_register(spi_device_handle_t spi,
     return ret;
 }
 
+// TODO dynamic read size
 static esp_err_t read_LSM6DS3_register(spi_device_handle_t spi, 
                                       uint8_t addr, 
                                       uint8_t *value,
@@ -89,28 +93,89 @@ static esp_err_t read_LSM6DS3_register(spi_device_handle_t spi,
     if (ret == ESP_OK) {
         *value = rx_data[1];  // Second byte contains the data
     }
-    
+
     return ret;
 }
 
-esp_err_t test_LSM6DS3_connection(spi_device_handle_t spi) {
+static esp_err_t test_LSM6DS3_connection(spi_device_handle_t spi) {
     uint8_t who_am_i;
     esp_err_t ret;
 
     ret = read_LSM6DS3_register(spi, LSM6DS3_WHO_AM_I, &who_am_i, 1);
 
     if (ret != ESP_OK) {
-        ESP_LOGE("LSM6DS3", "Failed to read WHO_AM_I register");
+        ESP_LOGE(TAG, "Failed to read WHO_AM_I register");
         return ret;
     }
 
     if (who_am_i != LSM6DS3_WHO_AM_I_VALUE) {
-        ESP_LOGE("LSM6DS3", "WHO_AM_I mismatch. Expected: 0x%x, Got: 0x%x", 
+        ESP_LOGE(TAG, "WHO_AM_I mismatch. Expected: 0x%x, Got: 0x%x", 
                  LSM6DS3_WHO_AM_I_VALUE, who_am_i);
         return ESP_ERR_INVALID_RESPONSE;
     }
 
-    ESP_LOGI("LSM6DS3", "Device ID verified successfully");
+    ESP_LOGI(TAG, "Device ID verified successfully");
     return ESP_OK;
 }
+
+esp_err_t LSM6DS3_init(spi_device_handle_t spi){
+    esp_err_t ret;
+    
+    ret = test_LSM6DS3_connection(spi);
+    if (ret != ESP_OK){
+        return ret; 
+    }
+    
+    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL2_G,    0x4C);
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to write register 0x%x!", LSM6DS3_CTRL2_G);
+        return ret;
+    }
+
+    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL1_XL,   0x4A);
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to write register 0x%x!", LSM6DS3_CTRL1_XL);
+        return ret;
+    }
+
+    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL7_G,    0x00);
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to write register 0x%x!", LSM6DS3_CTRL7_G);
+        return ret;
+    }
+
+    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL8_XL,   0x09);
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to write register 0x%x!", LSM6DS3_CTRL8_XL);
+        return ret;
+    }
+
+    return ESP_OK;
+}
+
+
+// READING DATA FROM THE SENSOR
+/*The 1st FIFO data set is reserved for gyroscope data; */
+/*The 2nd FIFO data set is reserved for accelerometer data;*/
+/*The 3rd FIFO data set is reserved for the external sensor data stored in the registers from*/
+
+
+/*esp_err_t read_LSM6DS3_accelormeter(spi_device_handle_t spi, vec3_u *data){*/
+/*    esp_err_t ret;*/
+/*    return ret;*/
+/*}*/
+/**/
+/*esp_err_t read_LSM6DS3_gyroscope(spi_device_handle_t spi, vec3_u *data){*/
+/*   esp_err_t ret;*/
+/*   return ret;*/
+/*}*/
+
+
+
+
+
+
+
+
+
 

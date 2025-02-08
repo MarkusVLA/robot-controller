@@ -11,8 +11,6 @@
 // Private config should include the defenitions:
 // WIFI_SSID
 // WIFI_PASSWORD
-// SERVER_IP
-// SERVER_PORT
 #include "private_config.h" 
 #include "io_config.h"
 #include "spi_master.h"
@@ -46,12 +44,12 @@ void app_main(void) {
     }
 
     spi_device_handle_t LSM6DS3_handle = init_spi();
-    ret = test_LSM6DS3_connection(LSM6DS3_handle);
+    ret = LSM6DS3_init(LSM6DS3_handle);
     
     int running = 1;
     while(running) {
-        vTaskDelay(pdMS_TO_TICKS(10));
-        test_LSM6DS3_connection(LSM6DS3_handle);
+        vTaskDelay(pdMS_TO_TICKS(1000));
+        // Do something
     }
 
     stop_webserver(server_handle);

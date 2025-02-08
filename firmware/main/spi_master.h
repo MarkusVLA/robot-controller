@@ -20,9 +20,15 @@
 
 #define LSM6DS3_RX_BUF_SIZE (8 * sizeof(uint8_t))
 #define LSM6DS3_HOST SPI2_HOST
+
+// Vector3 struct for accelerometer register values.
+typedef struct {
+    // Has to be converted to degrees.
+    uint8_t x, y, z;
+} vec3_u;
                    
 // Initalize the SPI driver with given config
 spi_device_handle_t init_spi();
 
-// Test handshake with LSM6DS3
-esp_err_t test_LSM6DS3_connection(spi_device_handle_t spi);
+// Initalize the IMU sensor.
+esp_err_t LSM6DS3_init(spi_device_handle_t spi);
