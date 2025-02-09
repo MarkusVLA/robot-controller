@@ -70,28 +70,33 @@ static esp_err_t write_LSM6DS3_register(spi_device_handle_t spi,
     return ret;
 }
 
-// TODO dynamic read size
+
+// Read any register in to a uint8_t buffer:
 static esp_err_t read_LSM6DS3_register(spi_device_handle_t spi, 
                                       uint8_t addr, 
                                       uint8_t *value,
-                                      size_t length) {
+                                      size_t rx_length) {
     esp_err_t ret;
     spi_transaction_t transaction;
     
     memset(&transaction, 0, sizeof(transaction));
     
-    uint8_t tx_data[2] = {0};
-    tx_data[0] = (0x80 | addr);  // Set read bit 
+    uint8_t tx_data[rx_length + 1];        // +1 for command byte 
+    memset(&tx_data, 0, rx_length + 1);    // Init tx buffer to 0
+
+    tx_data[0] = (0x80 | addr);         // Set read bit 
     
-    uint8_t rx_data[2];  // Buffer for command byte + data byte
+    uint8_t rx_data[rx_length + 1];        // Buffer for command byte + data byte
+    memset(rx_data, 0, rx_length + 1);     // Init rx buffer to 0
     
-    transaction.length = 16;  // Two bytes (command + data)
+    transaction.length = (rx_length + 1) * 8;  // (command + data) * 8bits (in bits)
     transaction.tx_buffer = tx_data;
     transaction.rx_buffer = rx_data;
     
     ret = spi_device_polling_transmit(spi, &transaction);
     if (ret == ESP_OK) {
-        *value = rx_data[1];  // Second byte contains the data
+        // data starts from second byte after reg address:
+        memcpy(value, &rx_data[1], rx_length);
     }
 
     return ret;
@@ -154,17 +159,32 @@ esp_err_t LSM6DS3_init(spi_device_handle_t spi){
 }
 
 
-// READING DATA FROM THE SENSOR
-/*The 1st FIFO data set is reserved for gyroscope data; */
-/*The 2nd FIFO data set is reserved for accelerometer data;*/
-/*The 3rd FIFO data set is reserved for the external sensor data stored in the registers from*/
 
+esp_err_t read_LSM6DS3_accelormeter(spi_device_handle_t spi, vec3_u *data){
+    esp_err_t ret;
 
-/*esp_err_t read_LSM6DS3_accelormeter(spi_device_handle_t spi, vec3_u *data){*/
-/*    esp_err_t ret;*/
-/*    return ret;*/
-/*}*/
-/**/
+    uint8_t read_ready_status;
+    ret = read_LSM6DS3_register(spi, LSM6DS3_STATUS_REG, &read_ready_status, 1);
+    
+    if (ret != ESP_OK){
+        ESP_LOGE(TAG, "Reading status register 0x%x failed", LSM6DS3_STATUS_REG);
+        return ret;
+    }
+
+    if (!(read_ready_status & 0x01)){ // accelerometer available bit
+        ESP_LOGE(TAG, "Accelerometer not available");
+        return ESP_FAIL;
+    }
+
+    ret = read_LSM6DS3_register(spi, LSM6DS3_OUTX_L_XL, (uint8_t*) data, 3 * sizeof(uint16_t));
+    if (ret != ESP_OK){
+        ESP_LOGE(TAG, "Reading accelerometer data register 0x%x failed", LSM6DS3_OUTX_L_XL);
+        return ret;
+    }
+
+    return ret;
+}
+
 /*esp_err_t read_LSM6DS3_gyroscope(spi_device_handle_t spi, vec3_u *data){*/
 /*   esp_err_t ret;*/
 /*   return ret;*/

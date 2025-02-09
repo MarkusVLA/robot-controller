@@ -46,10 +46,16 @@ void app_main(void) {
     spi_device_handle_t LSM6DS3_handle = init_spi();
     ret = LSM6DS3_init(LSM6DS3_handle);
     
+
+    vec3_u accelerometer_data = {0};
     int running = 1;
     while(running) {
-        vTaskDelay(pdMS_TO_TICKS(1000));
-        // Do something
+        vTaskDelay(pdMS_TO_TICKS(32));
+        // test reading the accelerometer
+        read_LSM6DS3_accelormeter(LSM6DS3_handle, &accelerometer_data);
+        printf("x: %d, y: %d, z: %d\n", accelerometer_data.x, 
+                                      accelerometer_data.y, 
+                                      accelerometer_data.z);
     }
 
     stop_webserver(server_handle);
