@@ -1,7 +1,9 @@
 #include "sensor_api.h"
+#include "spi_master.h"
 
-// Placeholder function
-float get_sensor_val(){
-    return 420.0;
-}
+static spi_device_handle_t spi;
+
+// TODO add function to get some data from the sensors and use that in the REST api.
+
+
 

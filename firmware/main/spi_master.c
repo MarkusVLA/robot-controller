@@ -81,13 +81,13 @@ static esp_err_t read_LSM6DS3_register(spi_device_handle_t spi,
     
     memset(&transaction, 0, sizeof(transaction));
     
-    uint8_t tx_data[rx_length + 1];        // +1 for command byte 
-    memset(&tx_data, 0, rx_length + 1);    // Init tx buffer to 0
+    uint8_t tx_data[rx_length + 1];         // +1 for command byte 
+    memset(&tx_data, 0, rx_length + 1);     // Init tx buffer to 0
 
-    tx_data[0] = (0x80 | addr);         // Set read bit 
+    tx_data[0] = (0x80 | addr);             // Set read bit 
     
-    uint8_t rx_data[rx_length + 1];        // Buffer for command byte + data byte
-    memset(rx_data, 0, rx_length + 1);     // Init rx buffer to 0
+    uint8_t rx_data[rx_length + 1];         // Buffer for command byte + data byte
+    memset(rx_data, 0, rx_length + 1);      // Init rx buffer to 0
     
     transaction.length = (rx_length + 1) * 8;  // (command + data) * 8bits (in bits)
     transaction.tx_buffer = tx_data;
@@ -131,25 +131,25 @@ esp_err_t LSM6DS3_init(spi_device_handle_t spi){
         return ret; 
     }
     
-    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL2_G,    0x4C);
+    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL2_G, 0x4C);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to write register 0x%x!", LSM6DS3_CTRL2_G);
         return ret;
     }
 
-    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL1_XL,   0x4A);
+    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL1_XL, 0x4A);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to write register 0x%x!", LSM6DS3_CTRL1_XL);
         return ret;
     }
 
-    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL7_G,    0x00);
+    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL7_G, 0x00);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to write register 0x%x!", LSM6DS3_CTRL7_G);
         return ret;
     }
 
-    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL8_XL,   0x09);
+    ret = write_LSM6DS3_register(spi, LSM6DS3_CTRL8_XL, 0x09);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to write register 0x%x!", LSM6DS3_CTRL8_XL);
         return ret;
@@ -160,7 +160,7 @@ esp_err_t LSM6DS3_init(spi_device_handle_t spi){
 
 
 
-esp_err_t read_LSM6DS3_accelormeter(spi_device_handle_t spi, vec3_u *data){
+esp_err_t read_LSM6DS3_accelormeter(spi_device_handle_t spi, vec3_16i *data){
     esp_err_t ret;
 
     uint8_t read_ready_status;
@@ -171,12 +171,12 @@ esp_err_t read_LSM6DS3_accelormeter(spi_device_handle_t spi, vec3_u *data){
         return ret;
     }
 
-    if (!(read_ready_status & 0x01)){ // accelerometer available bit
+    if (!(read_ready_status & 0x01)){ // accelerometer available bit (lsb)
         ESP_LOGE(TAG, "Accelerometer not available");
         return ESP_FAIL;
     }
 
-    ret = read_LSM6DS3_register(spi, LSM6DS3_OUTX_L_XL, (uint8_t*) data, 3 * sizeof(uint16_t));
+    ret = read_LSM6DS3_register(spi, LSM6DS3_OUTX_L_XL, (uint8_t*) data, 3 * sizeof(int16_t));
     if (ret != ESP_OK){
         ESP_LOGE(TAG, "Reading accelerometer data register 0x%x failed", LSM6DS3_OUTX_L_XL);
         return ret;
@@ -185,10 +185,32 @@ esp_err_t read_LSM6DS3_accelormeter(spi_device_handle_t spi, vec3_u *data){
     return ret;
 }
 
-/*esp_err_t read_LSM6DS3_gyroscope(spi_device_handle_t spi, vec3_u *data){*/
-/*   esp_err_t ret;*/
-/*   return ret;*/
-/*}*/
+esp_err_t read_LSM6DS3_gyroscope(spi_device_handle_t spi, vec3_16i *data){
+    esp_err_t ret;
+    
+    uint8_t read_ready_status = 0;
+    ret = read_LSM6DS3_register(spi, LSM6DS3_STATUS_REG, &read_ready_status, 1);
+    
+    if (ret != ESP_OK){
+        ESP_LOGE(TAG, "Reading status register 0x%x failed", LSM6DS3_STATUS_REG);
+        return ret;
+    }
+
+    if (!(read_ready_status & 0x02)){ // accelerometer available bit 0b00000010
+        ESP_LOGE(TAG, "Gyroscope not available");
+        return ESP_FAIL;
+    }
+
+    ret = read_LSM6DS3_register(spi, LSM6DS3_OUTX_L_G, (uint8_t*) data, 3 * sizeof(int16_t));
+
+    if (ret != ESP_OK){
+        ESP_LOGE(TAG, "Reading gyroscope data register 0x%x failed", LSM6DS3_OUTX_L_G);
+        return ret;
+    }
+
+    return ret;
+
+}
 
 
 

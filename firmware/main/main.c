@@ -47,15 +47,18 @@ void app_main(void) {
     ret = LSM6DS3_init(LSM6DS3_handle);
     
 
-    vec3_u accelerometer_data = {0};
+    vec3_16i sensor_data = {0};
     int running = 1;
     while(running) {
-        vTaskDelay(pdMS_TO_TICKS(32));
+        vTaskDelay(pdMS_TO_TICKS(250));
         // test reading the accelerometer
-        read_LSM6DS3_accelormeter(LSM6DS3_handle, &accelerometer_data);
-        printf("x: %d, y: %d, z: %d\n", accelerometer_data.x, 
-                                      accelerometer_data.y, 
-                                      accelerometer_data.z);
+        read_LSM6DS3_gyroscope(LSM6DS3_handle, &sensor_data);
+        float x, y, z;
+        x = (float) sensor_data.x * 4.0 / 32768.0;
+        y = (float) sensor_data.y * 4.0 / 32768.0;
+        z = (float) sensor_data.z * 4.0 / 32768.0;
+        printf("x: %.2f, y: %.2f, z: %.2f\n", x, y, z);
+
     }
 
     stop_webserver(server_handle);

@@ -3,4 +3,10 @@
 
 #pragma once
 
-float get_sensor_val();
+#include "spi_master.h"
+#include "driver/gpio.h"
+
+esp_err_t init_sensors(void);
+
+vec3_16i get_test_data();
+

@@ -24,8 +24,8 @@
 // Vector3 struct for accelerometer register values.
 typedef struct {
     // Has to be converted to degrees.
-    uint16_t x, y, z;
-} vec3_u;
+    int16_t x, y, z;
+} vec3_16i;
                    
 // Initalize the SPI driver with given config
 spi_device_handle_t init_spi();
@@ -33,5 +33,8 @@ spi_device_handle_t init_spi();
 // Initalize the IMU sensor.
 esp_err_t LSM6DS3_init(spi_device_handle_t spi);
 
-// Read the accelerometer in to a vec3_u struct:
-esp_err_t read_LSM6DS3_accelormeter(spi_device_handle_t spi, vec3_u *data);
+// Read the accelerometer 
+esp_err_t read_LSM6DS3_accelormeter(spi_device_handle_t spi, vec3_16i *data);
+
+// Read gyroscope in to a 
+esp_err_t read_LSM6DS3_gyroscope(spi_device_handle_t spi, vec3_16i *data);

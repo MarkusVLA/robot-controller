@@ -60,7 +60,7 @@
 #define LSM6DS3_OUTX_H_XL                   0x29
 #define LSM6DS3_OUTY_L_XL                   0x2A
 #define LSM6DS3_OUTY_H_XL                   0x2B
-#define LSM6DS3_OUTZ_L_XL                   0x2C
+#define LSM6DS3_OUTZ_L_XL                   0x2C 
 #define LSM6DS3_OUTZ_H_XL                   0x2D
 
 /* Sensor Hub Registers */
