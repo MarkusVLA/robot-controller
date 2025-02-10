@@ -7,6 +7,7 @@
 #include "wifi_api.h"
 #include "rest_api.h"
 #include "motor_api.h"
+#include "sensor_api.h"
 
 // Private config should include the defenitions:
 // WIFI_SSID
@@ -43,25 +44,16 @@ void app_main(void) {
         return;
     }
 
-    spi_device_handle_t LSM6DS3_handle = init_spi();
-    ret = LSM6DS3_init(LSM6DS3_handle);
-    
+    init_sensors();
 
-    vec3_16i sensor_data = {0};
+
     int running = 1;
     while(running) {
         vTaskDelay(pdMS_TO_TICKS(250));
-        // test reading the accelerometer
-        read_LSM6DS3_gyroscope(LSM6DS3_handle, &sensor_data);
-        float x, y, z;
-        x = (float) sensor_data.x * 4.0 / 32768.0;
-        y = (float) sensor_data.y * 4.0 / 32768.0;
-        z = (float) sensor_data.z * 4.0 / 32768.0;
-        printf("x: %.2f, y: %.2f, z: %.2f\n", x, y, z);
-
+        // Sensor data from HTTP request.
     }
 
     stop_webserver(server_handle);
-    deinit_wifi();
-}
+    deinit_wifi(); 
 
+}
