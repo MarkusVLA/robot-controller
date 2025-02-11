@@ -8,23 +8,19 @@
 #include "rest_api.h"
 #include "motor_api.h"
 #include "sensor_api.h"
+#include "io_config.h"
 
 // Private config should include the defenitions:
-// WIFI_SSID
-// WIFI_PASSWORD
+// WIFI_SSID and WIFI_PASSWORD
 #include "private_config.h" 
-#include "io_config.h"
-#include "spi_master.h"
 
 #define TAG "main"
 
 void app_main(void) {
-
     gpio_config(&io_config);
 
     init_wifi();
     esp_err_t ret = connect_wifi(WIFI_SSID, WIFI_PASSWORD);
-
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "Failed to connect to WiFi");
         /*return;*/
@@ -44,16 +40,18 @@ void app_main(void) {
         return;
     }
 
-    init_sensors();
-
+    ret = init_sensors();
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to initalize sensors");
+    }
 
     int running = 1;
     while(running) {
         vTaskDelay(pdMS_TO_TICKS(250));
-        // Sensor data from HTTP request.
+        set_motor_a(MOTOR_FORWARD, 512); // Motor A forwards at 50% speed;
     }
 
     stop_webserver(server_handle);
-    deinit_wifi(); 
+    deinit_wifi();
 
 }

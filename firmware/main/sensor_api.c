@@ -25,13 +25,12 @@ esp_err_t init_sensors(){
         ESP_LOGE(TAG, "Failed to init IMU sensor");
         return ret;
     } 
-
     return ret;
 }
 
 vec3_f get_gyroscope_data(void){
     vec3_16i val = {0};
-    ESP_ERROR_CHECK(read_LSM6DS3_accelormeter(LSM6DS3_handle, &val));
+    read_LSM6DS3_accelormeter(LSM6DS3_handle, &val);
     return gyro_data_to_unit_vector(val);
 }
 

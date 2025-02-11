@@ -8,8 +8,6 @@
 // HELPERS
 #define TAG "Rest API"
 
-
-
 esp_err_t handle_motor_speed(char* data) {
     // 
     uintmax_t duty = strtoumax(data, NULL, 10);
@@ -17,7 +15,7 @@ esp_err_t handle_motor_speed(char* data) {
        ESP_LOGE(TAG, "Could not convert post request content to motor speed");
        return ESP_FAIL;
     }
-    if (test_motor_a(duty) != ESP_OK) {
+    if (set_motor_a(MOTOR_FORWARD, duty) != ESP_OK) {
         ESP_LOGE(TAG, "Failed to spin motor");
         return ESP_FAIL;
     }

@@ -7,8 +7,19 @@
 #include "driver/gpio.h"
 #include "io_config.h"
 
+
+typedef enum {
+    MOTOR_FORWARD,
+    MOTOR_BACKWARD,
+    MOTOR_STOP
+} motor_direction_t;
+
 // Initialize the motor PWM config;
 esp_err_t init_motor_config(void);
-// Set the speed of motor 1
-esp_err_t test_motor_a(uint32_t duty);
 
+// Set motor A speed and direction
+esp_err_t set_motor_a(motor_direction_t direction, uint32_t duty);
+
+
+// Set motor B speed and direction
+esp_err_t set_motor_b(motor_direction_t direction, uint32_t duty);

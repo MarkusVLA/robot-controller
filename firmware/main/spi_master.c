@@ -5,8 +5,6 @@
 
 #define TAG "LSM6DS3"
 
-// Sensor read based on sensor inturrupts: INT_1, INT_2
-
 static const gpio_config_t LSM6DS3_intr_config = {
     .pin_bit_mask = ((1ULL << INT_1)  |
                      (1ULL << INT_2)),
@@ -211,13 +209,4 @@ esp_err_t read_LSM6DS3_gyroscope(spi_device_handle_t spi, vec3_16i *data){
     return ret;
 
 }
-
-
-
-
-
-
-
-
-
 
