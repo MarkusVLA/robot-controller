@@ -20,3 +20,5 @@ Installation and build instructions from: [ESP-IDF API reference](https://docs.e
 
 
 [Comprehensive hardware documentation](documentation/Hardware_documentation.pdf) 
+
+The FOC branch seeks to implement a PMSM FOC driver on the pcb, so no extarnal ESC would be necessary. 
