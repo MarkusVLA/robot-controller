@@ -20,7 +20,37 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 59.69) (xy 118.11 59.69)
+			(xy 109.22 80.01) (xy 132.08 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10790047-d21d-4575-a7c2-dc05cf51a4c9")
+	)
+	(wire
+		(pts
+			(xy 180.34 57.15) (xy 187.96 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22ba0cc3-2996-4d97-b87b-a82a23c39745")
+	)
+	(wire
+		(pts
+			(xy 180.34 66.04) (xy 187.96 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f0f5ad2-439c-4549-ae9c-3cd33f71a9b9")
+	)
+	(wire
+		(pts
+			(xy 109.22 55.88) (xy 116.84 55.88)
 		)
 		(stroke
 			(width 0)
@@ -30,7 +60,47 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 71.12) (xy 118.11 71.12)
+			(xy 180.34 63.5) (xy 187.96 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "487fe439-f432-46b1-ad38-7a7447019252")
+	)
+	(wire
+		(pts
+			(xy 180.34 72.39) (xy 187.96 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6519e2f6-6f8d-493b-8666-e5e697ff8b96")
+	)
+	(wire
+		(pts
+			(xy 132.08 77.47) (xy 149.86 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7554365d-65af-4e3d-a33b-2de00f3e2879")
+	)
+	(wire
+		(pts
+			(xy 180.34 59.69) (xy 187.96 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "775a14ea-64c9-4093-b23b-47305c8ea218")
+	)
+	(wire
+		(pts
+			(xy 109.22 67.31) (xy 116.84 67.31)
 		)
 		(stroke
 			(width 0)
@@ -40,7 +110,7 @@
 	)
 	(bus
 		(pts
-			(xy 144.78 62.23) (xy 151.13 62.23)
+			(xy 143.51 58.42) (xy 149.86 58.42)
 		)
 		(stroke
 			(width 0)
@@ -50,7 +120,37 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 63.5) (xy 118.11 63.5)
+			(xy 129.54 74.93) (xy 129.54 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9972b3bc-f610-4c89-b43c-e993b355d372")
+	)
+	(wire
+		(pts
+			(xy 129.54 77.47) (xy 109.22 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99a81d50-929a-43e2-bdd9-ae6a764e9b26")
+	)
+	(wire
+		(pts
+			(xy 149.86 74.93) (xy 129.54 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c5264c9-e6e5-4163-a12e-a5b42ffd59a9")
+	)
+	(wire
+		(pts
+			(xy 109.22 59.69) (xy 116.84 59.69)
 		)
 		(stroke
 			(width 0)
@@ -60,7 +160,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 67.31) (xy 118.11 67.31)
+			(xy 109.22 63.5) (xy 116.84 63.5)
 		)
 		(stroke
 			(width 0)
@@ -68,8 +168,28 @@
 		)
 		(uuid "bbb9e3a8-9bff-4039-bc82-e1cc4464a2e5")
 	)
+	(wire
+		(pts
+			(xy 180.34 69.85) (xy 187.96 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bde407e6-7ef8-4466-8544-bf051c087696")
+	)
+	(wire
+		(pts
+			(xy 132.08 80.01) (xy 132.08 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7c9bf66-f70f-4f91-8d9c-0a7114243f31")
+	)
 	(sheet
-		(at 148.59 90.17)
+		(at 187.96 45.72)
 		(size 36.83 36.83)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -84,7 +204,7 @@
 		)
 		(uuid "0a78ade5-b37d-47ca-b20e-2a3ea007179c")
 		(property "Sheetname" "Inverter"
-			(at 163.322 109.22 0)
+			(at 201.93 62.992 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -95,7 +215,7 @@
 			)
 		)
 		(property "Sheetfile" "inverter.kicad_sch"
-			(at 148.59 111.0746 0)
+			(at 187.96 66.6246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -105,48 +225,18 @@
 			)
 		)
 		(pin "LIN3" input
-			(at 175.26 90.17 90)
+			(at 187.96 57.15 180)
 			(uuid "8cc39697-7edb-486f-9926-31cf3bb12795")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "LIN1" input
-			(at 160.02 90.17 90)
+			(at 187.96 69.85 180)
 			(uuid "0307b1e1-4c6e-43c2-934d-83ffc388234f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "I_W" output
-			(at 158.75 127 270)
-			(uuid "ae5a74e7-373c-4dc4-8b09-8185fee2ac96")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "I_U" output
-			(at 173.99 127 270)
-			(uuid "26365a8d-3fad-4053-9fa3-0027e5e3f72e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "I_V" output
-			(at 166.37 127 270)
-			(uuid "5ec16e9e-8da2-4cf2-aebb-12b6c78d4ea0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -155,47 +245,47 @@
 			)
 		)
 		(pin "HIN3" input
-			(at 172.72 90.17 90)
+			(at 187.96 59.69 180)
 			(uuid "344e67d9-4931-4a50-94ea-5c760f7fefff")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "HIN2" input
-			(at 165.1 90.17 90)
+			(at 187.96 66.04 180)
 			(uuid "ffa04ec9-e173-41bb-ba3b-c4b2bc4853b0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "HIN1" input
-			(at 157.48 90.17 90)
+			(at 187.96 72.39 180)
 			(uuid "05df31f1-3e69-4967-8e55-6cff22811024")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "LIN2" input
-			(at 167.64 90.17 90)
+			(at 187.96 63.5 180)
 			(uuid "d00ff77f-02ba-4480-8ed5-ea760628c09a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "FAULT_U" output
-			(at 185.42 100.33 0)
+			(at 224.79 55.88 0)
 			(uuid "c9ce54c7-c466-4a2d-8645-279b4a7fe3d5")
 			(effects
 				(font
@@ -205,7 +295,7 @@
 			)
 		)
 		(pin "VI_U" output
-			(at 185.42 110.49 0)
+			(at 224.79 66.04 0)
 			(uuid "0386cdb1-da4e-4f5f-a20c-95309feaf6c3")
 			(effects
 				(font
@@ -215,7 +305,7 @@
 			)
 		)
 		(pin "FAULT_V" output
-			(at 185.42 102.87 0)
+			(at 224.79 58.42 0)
 			(uuid "5eb6bf35-b2b9-4920-88fe-6f087f2e2354")
 			(effects
 				(font
@@ -225,7 +315,7 @@
 			)
 		)
 		(pin "VI_V" output
-			(at 185.42 113.03 0)
+			(at 224.79 68.58 0)
 			(uuid "cbb50308-514e-4c47-919d-7444d623ae7d")
 			(effects
 				(font
@@ -243,7 +333,7 @@
 		)
 	)
 	(sheet
-		(at 93.98 53.34)
+		(at 92.71 49.53)
 		(size 16.51 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -257,17 +347,19 @@
 			(color 200 200 200 1.0000)
 		)
 		(uuid "0ae5f9ae-65c9-435a-a7c4-ebbd11393512")
-		(property "Sheetname" "PWR"
-			(at 99.822 55.88 0)
+		(property "Sheetname" "USB"
+			(at 98.552 52.07 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
+					(thickness 0.3048)
+					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "pwr.kicad_sch"
-			(at 93.98 92.0246 0)
+			(at 92.71 88.2146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -276,28 +368,8 @@
 				(hide yes)
 			)
 		)
-		(pin "USB_D-" bidirectional
-			(at 110.49 59.69 0)
-			(uuid "68876a25-1649-48e7-81ba-6a025ca105e6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "USB_D+" bidirectional
-			(at 110.49 63.5 0)
-			(uuid "8998064a-84be-48a7-a453-87b73582d3f0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "B_STAT" output
-			(at 110.49 71.12 0)
+			(at 109.22 67.31 0)
 			(uuid "5ae2ffc1-f9e9-4168-8a18-b9c86cdb205e")
 			(effects
 				(font
@@ -307,8 +379,48 @@
 			)
 		)
 		(pin "V_SENSE" output
-			(at 110.49 67.31 0)
+			(at 109.22 63.5 0)
 			(uuid "92bd23b2-07aa-475d-944f-0a5ec545ee12")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP_USB_D-" bidirectional
+			(at 109.22 55.88 0)
+			(uuid "f31effe5-2c20-4367-b664-e1756bdcb346")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP_USB_D+" bidirectional
+			(at 109.22 59.69 0)
+			(uuid "99dbb0ac-75d0-4e1c-89af-2adcbf5500f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "STM_USB_D+" bidirectional
+			(at 109.22 77.47 0)
+			(uuid "2aab73b6-9cb2-4d50-99ee-59831e510d8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "STM_USB_D-" bidirectional
+			(at 109.22 80.01 0)
+			(uuid "ec45d60c-1123-40e8-a222-e3709507b679")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -325,8 +437,8 @@
 		)
 	)
 	(sheet
-		(at 115.57 107.95)
-		(size 12.7 13.97)
+		(at 127 91.44)
+		(size 12.7 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -341,7 +453,7 @@
 		)
 		(uuid "17b2e39f-de8a-4f36-bada-0398985dd850")
 		(property "Sheetname" "MISC"
-			(at 115.57 107.2384 0)
+			(at 127 90.7284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -350,7 +462,7 @@
 			)
 		)
 		(property "Sheetfile" "misc.kicad_sch"
-			(at 115.57 122.5046 0)
+			(at 127 103.4546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -367,7 +479,7 @@
 		)
 	)
 	(sheet
-		(at 151.13 52.07)
+		(at 149.86 48.26)
 		(size 30.48 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -382,7 +494,7 @@
 		)
 		(uuid "4443a510-59f3-4c3e-be20-1e9b68806c93")
 		(property "Sheetname" "STM32-H7"
-			(at 157.988 55.626 0)
+			(at 158.75 51.308 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -393,7 +505,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 151.13 88.2146 0)
+			(at 149.86 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -403,7 +515,7 @@
 			)
 		)
 		(pin "ESP_SPI" bidirectional
-			(at 151.13 62.23 180)
+			(at 149.86 58.42 180)
 			(uuid "a0614a03-cb60-419f-8e7f-905ce1da3007")
 			(effects
 				(font
@@ -413,48 +525,68 @@
 			)
 		)
 		(pin "LIN1" output
-			(at 160.02 83.82 270)
+			(at 180.34 69.85 0)
 			(uuid "abd7d3f0-5e0c-4c04-8882-b87b670b9789")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "HIN2" output
-			(at 167.64 83.82 270)
+			(at 180.34 66.04 0)
 			(uuid "8b537daa-4a1e-414c-b192-fee0362c45e0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "LIN3" output
-			(at 175.26 83.82 270)
+			(at 180.34 57.15 0)
 			(uuid "3a8a5804-d3cb-4e87-a729-c2d9f9299604")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "HIN3" output
-			(at 172.72 83.82 270)
+			(at 180.34 59.69 0)
 			(uuid "89ac0d8c-8bf9-4a34-9ff3-fa59eba63eff")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "LIN2" output
-			(at 165.1 83.82 270)
+			(at 180.34 63.5 0)
 			(uuid "d01ef6b2-abdc-4af9-8268-f68d34839b33")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HIN1" output
+			(at 180.34 72.39 0)
+			(uuid "ac359c4a-d156-45d2-ac0d-2be333aa209f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "STM_USB_D+" bidirectional
+			(at 149.86 74.93 180)
+			(uuid "b5d81506-2d23-4407-b8ea-3834a1aa9c9a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -462,9 +594,9 @@
 				(justify left)
 			)
 		)
-		(pin "HIN1" output
-			(at 157.48 83.82 270)
-			(uuid "ac359c4a-d156-45d2-ac0d-2be333aa209f")
+		(pin "STM_USB_D-" bidirectional
+			(at 149.86 77.47 180)
+			(uuid "e2fb9fc6-7f77-4f77-89ba-4cfeb656d80c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -481,8 +613,8 @@
 		)
 	)
 	(sheet
-		(at 118.11 53.34)
-		(size 26.67 26.67)
+		(at 116.84 49.53)
+		(size 26.67 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -496,7 +628,7 @@
 		)
 		(uuid "57ba2272-ae20-40d5-a8fd-5ed98c5fe32f")
 		(property "Sheetname" "ESP32"
-			(at 127.762 57.15 0)
+			(at 126.492 52.324 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -507,7 +639,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 118.11 92.0246 0)
+			(at 116.84 88.2146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -516,28 +648,8 @@
 				(hide yes)
 			)
 		)
-		(pin "USB_D+" bidirectional
-			(at 118.11 63.5 180)
-			(uuid "ed68228e-f3d8-4769-8ba3-5de8dae42fe4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "USB_D-" bidirectional
-			(at 118.11 59.69 180)
-			(uuid "f7e96de0-0e5e-45a7-b130-8bd6a0197211")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "V_SENSE" input
-			(at 118.11 67.31 180)
+			(at 116.84 63.5 180)
 			(uuid "30f44c45-f79d-4662-b962-02bb69d52cb0")
 			(effects
 				(font
@@ -547,7 +659,7 @@
 			)
 		)
 		(pin "B_STAT" input
-			(at 118.11 71.12 180)
+			(at 116.84 67.31 180)
 			(uuid "0366e787-98ca-4833-b7c2-0ab49787085b")
 			(effects
 				(font
@@ -557,7 +669,7 @@
 			)
 		)
 		(pin "ESP_SPI" bidirectional
-			(at 144.78 62.23 0)
+			(at 143.51 58.42 0)
 			(uuid "f53a11f8-626c-4565-a9fd-43794ef8a588")
 			(effects
 				(font
@@ -566,10 +678,74 @@
 				(justify right)
 			)
 		)
+		(pin "ESP_USB_D+" bidirectional
+			(at 116.84 59.69 180)
+			(uuid "608f1997-131f-42b7-a46d-1f508da3e33b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESP_USB_D-" bidirectional
+			(at 116.84 55.88 180)
+			(uuid "4ec529f0-7a5f-434a-85d8-59293a289dba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Battle_bot_pcb"
 				(path "/d6203762-4d2e-4b90-86d1-ca295813f2e5"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 198.12 87.63)
+		(size 19.05 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 200 200 200 1.0000)
+		)
+		(uuid "ef198a0a-953e-4cb5-b792-d71126ab5d65")
+		(property "Sheetname" "Rotor Encoder"
+			(at 199.136 90.678 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+					(thickness 0.3048)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "estimator.kicad_sch"
+			(at 198.12 108.5346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Battle_bot_pcb"
+				(path "/d6203762-4d2e-4b90-86d1-ca295813f2e5"
+					(page "7")
 				)
 			)
 		)

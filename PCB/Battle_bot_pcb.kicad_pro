@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -646,7 +646,7 @@
     ],
     [
       "0ae5f9ae-65c9-435a-a7c4-ebbd11393512",
-      "PWR"
+      "USB"
     ],
     [
       "57ba2272-ae20-40d5-a8fd-5ed98c5fe32f",
@@ -657,12 +657,16 @@
       "Inverter"
     ],
     [
+      "4443a510-59f3-4c3e-be20-1e9b68806c93",
+      "STM32-H7"
+    ],
+    [
       "17b2e39f-de8a-4f36-bada-0398985dd850",
       "MISC"
     ],
     [
-      "4443a510-59f3-4c3e-be20-1e9b68806c93",
-      "STM32-H7"
+      "ef198a0a-953e-4cb5-b792-d71126ab5d65",
+      "Rotor Encoder"
     ]
   ],
   "text_variables": {}
