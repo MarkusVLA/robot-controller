@@ -6944,7 +6944,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_APV_APH0420"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
 			(at 198.12 34.29 0)
 			(effects
 				(font
@@ -7205,7 +7205,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 154.94 49.53 180)
+		(at 154.94 49.53 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7213,7 +7214,7 @@
 		(dnp no)
 		(uuid "253c1853-9a57-4f31-aaf1-fbbd25d3de4a")
 		(property "Reference" "R32"
-			(at 152.4 49.53 90)
+			(at 157.48 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7229,7 +7230,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 156.718 49.53 90)
+			(at 153.162 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7339,7 +7340,6 @@
 	(symbol
 		(lib_id "Device:C")
 		(at 219.71 44.45 0)
-		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7347,7 +7347,7 @@
 		(dnp no)
 		(uuid "2a997f63-dda3-4df2-aebf-6257ae008254")
 		(property "Reference" "C9"
-			(at 215.9 43.1799 0)
+			(at 223.52 43.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7356,7 +7356,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 215.9 45.7199 0)
+			(at 223.52 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7365,7 +7365,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 218.7448 48.26 0)
+			(at 220.6752 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7626,13 +7626,13 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 185.42 34.29 270)
-		(mirror x)
+		(at 185.42 34.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "37e82dba-aed4-44fa-8475-c02c99c7a3a0")
 		(property "Reference" "C8"
 			(at 185.42 26.67 90)
@@ -7651,7 +7651,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 181.61 33.3248 0)
+			(at 189.23 33.3248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8170,7 +8170,6 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 208.28 59.69 0)
-		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8178,7 +8177,7 @@
 		(dnp no)
 		(uuid "5179f570-1c32-48af-a3ef-c0be2ded3fc3")
 		(property "Reference" "R30"
-			(at 212.852 59.69 90)
+			(at 203.708 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8186,7 +8185,7 @@
 			)
 		)
 		(property "Value" "22.1k"
-			(at 210.566 59.69 90)
+			(at 205.994 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8194,7 +8193,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 210.058 59.69 90)
+			(at 206.502 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8743,7 +8742,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
+		(property "Footprint" "Connector_AMASS:AMASS_XT60-F_1x02_P7.20mm_Vertical"
 			(at 54.61 53.34 0)
 			(effects
 				(font

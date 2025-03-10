@@ -654,19 +654,27 @@
     ],
     [
       "0a78ade5-b37d-47ca-b20e-2a3ea007179c",
-      "Inverter"
-    ],
-    [
-      "4443a510-59f3-4c3e-be20-1e9b68806c93",
-      "STM32-H7"
+      "Inverter motor controller"
     ],
     [
       "17b2e39f-de8a-4f36-bada-0398985dd850",
       "MISC"
     ],
     [
+      "4443a510-59f3-4c3e-be20-1e9b68806c93",
+      "STM32-H7"
+    ],
+    [
       "ef198a0a-953e-4cb5-b792-d71126ab5d65",
       "Rotor Encoder"
+    ],
+    [
+      "aa12d175-131b-4fc0-a91f-34c0599772c7",
+      "SD-Card"
+    ],
+    [
+      "121f5451-1d8f-4425-a301-72051456127f",
+      "Inverter_bulk"
     ]
   ],
   "text_variables": {}

@@ -91,16 +91,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 149.86 92.71 0)
+		(at 160.02 104.14 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4f8e9d0b-0e9b-4491-85f1-dabbe8863f3b")
-		(property "Reference" "H1"
-			(at 152.4 91.4399 0)
+		(uuid "012bf460-9fc8-4263-bd2d-94492ce4330a")
+		(property "Reference" "H4"
+			(at 162.56 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -109,7 +109,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 152.4 93.9799 0)
+			(at 162.56 105.4099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -118,7 +118,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
-			(at 149.86 92.71 0)
+			(at 160.02 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -127,7 +127,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 92.71 0)
+			(at 160.02 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -136,7 +136,71 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 149.86 92.71 0)
+			(at 160.02 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Battle_bot_pcb"
+				(path "/d6203762-4d2e-4b90-86d1-ca295813f2e5/17b2e39f-de8a-4f36-bada-0398985dd850"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 137.16 93.98 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f8e9d0b-0e9b-4491-85f1-dabbe8863f3b")
+		(property "Reference" "H1"
+			(at 139.7 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 139.7 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
+			(at 137.16 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 137.16 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -155,16 +219,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 172.72 92.71 0)
+		(at 137.16 104.14 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c7381ec6-d71b-48db-8042-2821916b0743")
-		(property "Reference" "H2"
-			(at 175.26 91.4399 0)
+		(uuid "a66baca8-3460-46b7-957d-a77decbfd016")
+		(property "Reference" "H3"
+			(at 139.7 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -173,7 +237,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 175.26 93.9799 0)
+			(at 139.7 105.4099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -182,7 +246,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
-			(at 172.72 92.71 0)
+			(at 137.16 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -191,7 +255,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 92.71 0)
+			(at 137.16 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -200,7 +264,71 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 172.72 92.71 0)
+			(at 137.16 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Battle_bot_pcb"
+				(path "/d6203762-4d2e-4b90-86d1-ca295813f2e5/17b2e39f-de8a-4f36-bada-0398985dd850"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 160.02 93.98 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7381ec6-d71b-48db-8042-2821916b0743")
+		(property "Reference" "H2"
+			(at 162.56 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 162.56 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
+			(at 160.02 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 160.02 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
